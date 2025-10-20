@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Semantic</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="foto/logo.jpg">
+ </head>
+
+<body>
+   <!-- Bagian Header-->
+    <header>
+        <a href="index.html"><img src="foto/logo.jpg" alt="logo sekolah"></a>
+        <h1>SMAN 3 Bandung</h1>
+    
+
+        <!--Bagian Navigasi-->
+        <nav>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li>
+                    <a href="#">Profil</a>
+                    <ul>
+                        <li><a href="sejarah.html">Sejarah Sekolah</a></li>
+                        <li><a href="visimisi.html">Visi & Misi</a></li>
+                        <li><a href="gurustaff.html">Guru & Staff</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="berita.html">Berita</a>
+                </li>
+                <li><a href="kontak.html">Kontak</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <center><main class="kontak">
+        <h2>Hubungi Kami</h2>
+        <p class="yapping">Silakan isi form di bawah ini jika anda memiliki pertanyaan, saran, atau pesan kepada pihak sekolah.</p>
+
+        <form class="form kontak">
+            <label for="nama">Nama</label>
+            <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap Anda" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Masukkan alamat email Anda" required>
+
+            <label for="pesan">Pesan / Pertanyaan</label>
+            <textarea id="pesan" name="pesan" rows="6" placeholder="Tulis pesan atau pertanyaan Anda..." required></textarea>
+
+            <button type="submit" onclick="alert('Data telah dikonfirmasi!'); window.location.href='index.html';">Kirim</button>
+        </form>
+    </main></center>
+
+    
+
+    <footer>
+        <p>&copy; 2025 Portal Siswa SMAN 3 Bandung</p>
+    </footer>
+</body>
+</html>
